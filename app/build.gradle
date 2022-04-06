@@ -18,12 +18,14 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    testCompile("org.assertj:assertj-core:3.11.1")
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.8.2'
-// https://mvnrepository.com/artifact/com.google.guava/guava
+    
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+   // https://mvnrepository.com/artifact/pl.pragmatists/JUnitParams
+testImplementation group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'
+
+   // https://mvnrepository.com/artifact/com.google.guava/guava
 implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
+
 
     //implementation group: 'com.google.guava', name: 'guava', version: '31.0.1-jre'
 //testImplementation group: 'pl.pragmatists', name: 'JUnitParams', version: '1.0.6'
@@ -31,5 +33,5 @@ implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
 
 application {
     // Define the main class for the application.
-    mainClass = 'Retake.Counter'
+    mainClass = 'ru.ac.uniyar.testingcourse.Counter'
 }
